@@ -1,0 +1,11 @@
+<div class="games">
+  <div class="game" *ngFor="let game of games">
+    <a routerLink="{{game.id}}">
+      <img class="gameImage" [src]="game.box_art_url" alt="test">
+    </a>
+    <article>
+      <h2>{{game.name}}</h2>
+      <p>100k viewers</p>
+    </article>
+  </div>
+</div>

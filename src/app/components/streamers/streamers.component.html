@@ -1,0 +1,11 @@
+<ul class="streamList">
+  <li class="stream" *ngFor="let stream of streams">
+    <a [routerLink]="[stream.user_name]">
+      <img class="streamImage" [src]="stream.thumbnail_url" [alt]="stream.title">
+    </a>
+    <ul class="streamInfo">
+      <li class="streamTitle"><a [routerLink]="stream.user_name">{{ stream.title }}</a></li>
+      <li class="streamUser">{{ stream.user_name }}</li>
+    </ul>
+  </li>
+</ul>

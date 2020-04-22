@@ -1,0 +1,40 @@
+@import '../../../styles.scss';
+
+.streamList {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  @media screen and (max-width: $breakpoint-portrait) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.stream {
+  max-width: 215px;
+}
+
+.streamImage {
+  margin-bottom: 1rem;
+}
+
+.streamInfo {
+  color: $white;
+  margin-bottom: 2rem;
+  .streamTitle {
+    margin-bottom: 0.5rem;
+    a {
+      font-size: 0.8rem;
+      font-weight: bold;
+      &:visited, &:active, &:link {
+        color: $white;
+      }
+      &:hover {
+        color: $purple-main;
+      }
+    }
+  }
+  .streamUser {
+    font-size: 0.75rem;
+  }
+}
