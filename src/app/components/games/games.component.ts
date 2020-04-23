@@ -10,7 +10,7 @@ import { TwitchStreamersService } from 'src/app/services/twitch-streamers.servic
 })
 export class GamesComponent implements OnInit {
   games: GameData[];
-  constructor(private twitchGamesService: TwitchGamesService, private twitchStreamersService: TwitchStreamersService) { }
+  constructor(private twitchGamesService: TwitchGamesService) { }
 
   ngOnInit() {
     this.twitchGamesService.fetchTopGames()
